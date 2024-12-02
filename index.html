@@ -6,36 +6,15 @@
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.3.0/dist/confetti.min.js"></script>
 </head>
 <body>
-<h1>ਜਪ ਸਾਹਿਬ ਸਿੰਘ ✌️</h1>
+<h1>Hello</h1>
 
 <div>
-    <label for="code">Enter the Secret Code:</label>
-    <input type="text" id="code">
-    <button onclick="checkCode()" id="submitButton">Submit</button>
+
 </div>
 <div id="secretMessage" style="display: none;">
     🎉 Congratulations! You found the secret message! 🎉
 </div>
 
-<script>
-    const secretCode = "MIT";
 
-    function checkCode() {
-        const userInput = document.getElementById('code').value;
-        const messageDiv = document.getElementById('secretMessage');
-
-        if (userInput.toUpperCase() === secretCode) {
-            messageDiv.style.display = 'block';
-            // Confetti animation
-            confetti({
-                particleCount: 150,
-                spread: 70,
-                origin: { y: 0.6 }
-            });
-        } else {
-            alert('Wrong code. Try again.');
-        }
-    }
-</script>
 </body>
 </html>
